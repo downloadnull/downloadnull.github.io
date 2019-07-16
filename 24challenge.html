@@ -1,0 +1,66 @@
+<!doctype html public "-//w3c//dtd html 3.2//en">
+<html>
+<head>
+<title>Back After 24 Hours - Punishment Challenge</title>
+<blockquote style="text-align: justify; ">We are ad-sponsored files sharing site and we beg with you for single ads click on any advertisement displayed into our webpage to make our service free forever and pay rent of 3<sup>rd</sup> party could storage service, purchase expensive digital product that you cannot buy and purchase or update license on regular basis. The files we are sharing are 100% virus free (as per 100+ antivirus tool) and tested by our quality manager. However, we haven't detected any click from your ip address so this file may not be available for you within 24 hours unless you click our ads.
+<div style="border: 2px dashed red; padding: 2px;">
+<center> <strong> ESTIMATED WAITING TIME </strong>
+<script type="text/javascript">
+// From: http://www.webdeveloper.com/forum/showthread.php?t=215504
+
+
+function ShowTimes() {
+  var now = new Date();
+  var hrs = 23-now.getHours();
+  var mins = 59-now.getMinutes();
+  var secs = 59-now.getSeconds();
+  var str = '';
+      str =	now.toString();
+      str += '<br>0 days '+hrs+' hours '+mins+' minutes '+secs+' seconds';
+  document.getElementById('countdownToMidnight').innerHTML = str;
+}
+var _cntDown;
+function StopTimes() {
+	clearInterval(_cntDown);
+}
+
+</script>
+</head>
+<body onload="_cntDown=setInterval('ShowTimes()',1000)">
+<div id="countdownToMidnight"></div>
+</center>
+</div>
+<div style="text-align: justify;"> We hope you will back after above mentioned time-frame clicking our any AD campaign/banner displaying into our website. <b> Warning: </b>  Never try to visit the page with proxy browser or using VPN. </blockquote>
+<h5> We found following information about you. </h5> 
+<div style="border: 2px dashed green; padding: 2px;">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>Country: <span id="country"></span></div>
+    <div>State: <span id="state"></span></div>
+    <div>City: <span id="city"></span></div>
+    <div>Latitude: <span id="latitude"></span></div>
+    <div>Longitude: <span id="longitude"></span></div>
+    <div>IP: <span id="ipv4"></span></div>
+    <div style="text-align: justify;"> We will provide you file download link as soon as we detect ads click from your IP Adress (<span id="ipv4"></span>). But, if we detect any fraudable activity (using VPN) and you are not from <span id="country"></span> we will discontinue to fulfil our promise.</div>
+    <script>
+	$.ajax({
+		url: "https://geoip-db.com/jsonp",
+		jsonpCallback: "callback",
+		dataType: "jsonp",
+		success: function( location ) {
+			$('#country').html(location.country_name);
+			$('#state').html(location.state);
+			$('#city').html(location.city);
+			$('#latitude').html(location.latitude);
+			$('#longitude').html(location.longitude);
+			$('#ipv4').html(location.IPv4);  
+		}
+	});		
+    </script>
+    </div>
+    </div>
+   <div style="border: 2px dashed red; padding: 2px;"> <p style="text-align: justify; ">Click on any advertisement of the following page and spent at least 40 seconds time into the landed page to be participate into our reward program:</p><ul><li style="text-align: justify;"><b><a href="https://download.null.com.np">ADS LINK - OPTION ONE</a></b> (Click 1 AD Banner and navigate to some pages of landed website. Minimum time spend here are required at least 40 seconds and you will be rewarded with more than $80 priced product. Your value of time will meet about $2/second)</li><li style="text-align: justify;"><b><a href="https://bitly.com.np/loan">ADS LINK - OPTION TWO</a></b>&nbsp;(Click 1 AD Banner and navigate to some pages of landed website. Minimum time spend here are required at least 40 seconds and you will be rewarded with more than $80 priced product. Your value of time will meet about $2/second)</li><li style="text-align: justify;"><span style="font-weight: 700;"><a href="https://bitly.com.np/loan" style="color: rgb(35, 82, 124); text-decoration-line: underline; outline: 0px;">ADS LINK - OPTION TWO</a></span>&nbsp;(Suffer Website and Click 1 AD Banner and navigate to some pages of landed website. Minimum time spend here are required at least 1 min. and you will be rewarded with more than $120 priced product. Your value of time will meet about $2/second).</li></ul><p style="text-align: justify;">*<b>Terms &amp; Cobditions:</b></p><ol><li style="text-align: justify;">Don't use Ad-Blocker or Script Killing Software</li><li style="text-align: justify;">Don't use VPN, Proxy and Outdated Browser</li><li style="text-align: justify;">Cookie and JavaScript must be enabled.</li><li style="text-align: justify;">Don't use lite browser (Opera Mini, UC Mini, etc.)</li></ol>
+</div>
+</body>
+</html>
