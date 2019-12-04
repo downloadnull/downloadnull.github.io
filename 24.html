@@ -1,0 +1,27 @@
+<div style="border: 2px dashed red; padding: 2px;">
+<center> <strong> ESTIMATED WAITING TIME </strong>
+<script type="text/javascript">
+// From: http://www.webdeveloper.com/forum/showthread.php?t=215504
+
+
+function ShowTimes() {
+  var now = new Date();
+  var hrs = 23-now.getHours();
+  var mins = 59-now.getMinutes();
+  var secs = 59-now.getSeconds();
+  var str = '';
+      str =	now.toString();
+      str += '<br>0 days '+hrs+' hours '+mins+' minutes '+secs+' seconds';
+  document.getElementById('countdownToMidnight').innerHTML = str;
+}
+var _cntDown;
+function StopTimes() {
+	clearInterval(_cntDown);
+}
+
+</script>
+</head>
+<body onload="_cntDown=setInterval('ShowTimes()',1000)">
+<div id="countdownToMidnight"></div>
+</center>
+</div>
